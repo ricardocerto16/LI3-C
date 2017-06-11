@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['getarrayused',['getArrayUsed',['../array_8h.html#a628d1170a9f4f065f3f42c053c5829df',1,'array.h']]],
+  ['getarticleid',['getArticleId',['../heap_8h.html#a50421d20e31f2c3ea09d6b3866dcd937',1,'heap.h']]],
+  ['getavl',['getAvl',['../avl_8h.html#a2b3dcbc1b3b8f12f1dd4b18f0008af18',1,'avl.h']]],
+  ['getavlidart',['getAvlIdArt',['../avl_8h.html#afc32146502d7e8885ca880e5b37b07e9',1,'avl.h']]],
+  ['getavlleft',['getAvlLeft',['../avl_8h.html#a66dd8902bddf6453215faeb2fed7649b',1,'avl.h']]],
+  ['getavlright',['getAvlRight',['../avl_8h.html#a224a3bac24b257106a65761a1c2687d4',1,'avl.h']]],
+  ['getheaptotal',['getHeapTotal',['../heap_8h.html#a8a0edffec3967150800eb56cdc4b3464',1,'heap.h']]],
+  ['getheapused',['getHeapUsed',['../heap_8h.html#a1916bb28436fce28d4e06f05e25e3875',1,'heap.h']]],
+  ['getidcont',['getIdCont',['../heap_8h.html#a5044b449720f91c7cc9e1164befedb68',1,'heap.h']]],
+  ['getinfinfo',['getInfInfo',['../array_8h.html#ad662efe5c8d6ffdfe24630df9342c8ad',1,'array.h']]],
+  ['getinfo',['getInfo',['../avl_8h.html#af3b92dc76e754e239185902acf96f3fb',1,'avl.h']]],
+  ['getinftotal',['getInfTotal',['../array_8h.html#a091960df9af22fb07c5d497f0019b2f5',1,'array.h']]],
+  ['getnamecont',['getNameCont',['../heap_8h.html#a996eb2e19d27b7d212d8d501e2513efd',1,'heap.h']]],
+  ['getnbytes',['getNBytes',['../heap_8h.html#a7497adb6ad5b9cdafe02fb07f283184e',1,'heap.h']]],
+  ['getrevisionid',['getRevisionId',['../heap_8h.html#ab058326cff0e4a19a5a9aeed4ab54fc6',1,'heap.h']]],
+  ['getsize',['getSize',['../avl_8h.html#a4df8f2399abfa7683f424a051bb269d6',1,'avl.h']]],
+  ['gettimestamp',['getTimestamp',['../heap_8h.html#a78dd99d424abd6a2e0fa39315e2a466c',1,'heap.h']]],
+  ['gettitle',['getTitle',['../heap_8h.html#abaf1dc64a605858bca15d2e49f036a51',1,'heap.h']]],
+  ['gettotalwords',['getTotalWords',['../heap_8h.html#a8550a57b4d6956917a09862b8ef00709',1,'heap.h']]]
+];

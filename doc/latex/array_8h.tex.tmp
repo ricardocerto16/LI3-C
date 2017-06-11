@@ -1,0 +1,199 @@
+\hypertarget{array_8h}{}\section{src/headers/array.h File Reference}
+\label{array_8h}\index{src/headers/array.\+h@{src/headers/array.\+h}}
+
+
+Protótipos das funções que trabalham com Arrays.  
+
+
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for array.\+h\+:
+% FIG 0
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct array $\ast$ \hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}
+\begin{DoxyCompactList}\small\item\em Declaração do tipo Array, um tipo abstrato. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} \hyperlink{array_8h_aed0b13c19fe69eb8180084ef343f042a}{init\+Array} (int size)
+\begin{DoxyCompactList}\small\item\em Inicia a estrutura Array com um dado tamanho, alocando espaço para a mesma. \end{DoxyCompactList}\item 
+int \hyperlink{array_8h_aaca3072f3c1ff81a604741d52ee3f23b}{insert\+Inf} (\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a, long info, long total)
+\begin{DoxyCompactList}\small\item\em Insere num Array a informação pretendida. \end{DoxyCompactList}\item 
+int \hyperlink{array_8h_a628d1170a9f4f065f3f42c053c5829df}{get\+Array\+Used} (\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do Array utilizado até ao momento. \end{DoxyCompactList}\item 
+long \hyperlink{array_8h_a091960df9af22fb07c5d497f0019b2f5}{get\+Inf\+Total} (\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o total da inf. \end{DoxyCompactList}\item 
+long \hyperlink{array_8h_ad662efe5c8d6ffdfe24630df9342c8ad}{get\+Inf\+Info} (\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a, int i)
+\begin{DoxyCompactList}\small\item\em Retorna a Info da inf. \end{DoxyCompactList}\item 
+int \hyperlink{array_8h_ae549957d4208c340924ebc95b2178310}{find\+Index} (long id, \hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a)
+\begin{DoxyCompactList}\small\item\em Retorna o índice do id pretendido. \end{DoxyCompactList}\item 
+void \hyperlink{array_8h_aba30a52c18cd3042c46910a787ff056a}{set\+Inf\+Total} (\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} a, int index, long i)
+\begin{DoxyCompactList}\small\item\em altera o total da inf de um Array \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções que trabalham com Arrays. 
+
+O ficheiro contem os prototipos das funçoes da estrutura Array
+
+\begin{DoxyAuthor}{Author}
+Grupo 63 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}\label{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}} 
+\index{array.\+h@{array.\+h}!Array@{Array}}
+\index{Array@{Array}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{Array}{Array}}
+{\footnotesize\ttfamily typedef struct array$\ast$ \hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}
+
+
+
+Declaração do tipo Array, um tipo abstrato. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{array_8h_ae549957d4208c340924ebc95b2178310}\label{array_8h_ae549957d4208c340924ebc95b2178310}} 
+\index{array.\+h@{array.\+h}!find\+Index@{find\+Index}}
+\index{find\+Index@{find\+Index}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{find\+Index()}{findIndex()}}
+{\footnotesize\ttfamily int find\+Index (\begin{DoxyParamCaption}\item[{long}]{id,  }\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a }\end{DoxyParamCaption})}
+
+
+
+Retorna o índice do id pretendido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Id. \\
+\hline
+{\em a} & Array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+índice. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_a628d1170a9f4f065f3f42c053c5829df}\label{array_8h_a628d1170a9f4f065f3f42c053c5829df}} 
+\index{array.\+h@{array.\+h}!get\+Array\+Used@{get\+Array\+Used}}
+\index{get\+Array\+Used@{get\+Array\+Used}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{get\+Array\+Used()}{getArrayUsed()}}
+{\footnotesize\ttfamily int get\+Array\+Used (\begin{DoxyParamCaption}\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a }\end{DoxyParamCaption})}
+
+
+
+Retorna o tamanho do Array utilizado até ao momento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tamanho usado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_ad662efe5c8d6ffdfe24630df9342c8ad}\label{array_8h_ad662efe5c8d6ffdfe24630df9342c8ad}} 
+\index{array.\+h@{array.\+h}!get\+Inf\+Info@{get\+Inf\+Info}}
+\index{get\+Inf\+Info@{get\+Inf\+Info}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{get\+Inf\+Info()}{getInfInfo()}}
+{\footnotesize\ttfamily long get\+Inf\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna a Info da inf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array. \\
+\hline
+{\em i} & índice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Info. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_a091960df9af22fb07c5d497f0019b2f5}\label{array_8h_a091960df9af22fb07c5d497f0019b2f5}} 
+\index{array.\+h@{array.\+h}!get\+Inf\+Total@{get\+Inf\+Total}}
+\index{get\+Inf\+Total@{get\+Inf\+Total}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{get\+Inf\+Total()}{getInfTotal()}}
+{\footnotesize\ttfamily long get\+Inf\+Total (\begin{DoxyParamCaption}\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o total da inf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array. \\
+\hline
+{\em i} & índice. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_aed0b13c19fe69eb8180084ef343f042a}\label{array_8h_aed0b13c19fe69eb8180084ef343f042a}} 
+\index{array.\+h@{array.\+h}!init\+Array@{init\+Array}}
+\index{init\+Array@{init\+Array}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{init\+Array()}{initArray()}}
+{\footnotesize\ttfamily \hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array} init\+Array (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Inicia a estrutura Array com um dado tamanho, alocando espaço para a mesma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Tamanho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_aaca3072f3c1ff81a604741d52ee3f23b}\label{array_8h_aaca3072f3c1ff81a604741d52ee3f23b}} 
+\index{array.\+h@{array.\+h}!insert\+Inf@{insert\+Inf}}
+\index{insert\+Inf@{insert\+Inf}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{insert\+Inf()}{insertInf()}}
+{\footnotesize\ttfamily int insert\+Inf (\begin{DoxyParamCaption}\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a,  }\item[{long}]{info,  }\item[{long}]{total }\end{DoxyParamCaption})}
+
+
+
+Insere num Array a informação pretendida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array. \\
+\hline
+{\em info} & Key. \\
+\hline
+{\em total} & Value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{array_8h_aba30a52c18cd3042c46910a787ff056a}\label{array_8h_aba30a52c18cd3042c46910a787ff056a}} 
+\index{array.\+h@{array.\+h}!set\+Inf\+Total@{set\+Inf\+Total}}
+\index{set\+Inf\+Total@{set\+Inf\+Total}!array.\+h@{array.\+h}}
+\subsubsection{\texorpdfstring{set\+Inf\+Total()}{setInfTotal()}}
+{\footnotesize\ttfamily void set\+Inf\+Total (\begin{DoxyParamCaption}\item[{\hyperlink{array_8h_a5835f0db7884c3f0edcaf2f912df9d66}{Array}}]{a,  }\item[{int}]{index,  }\item[{long}]{i }\end{DoxyParamCaption})}
+
+
+
+altera o total da inf de um Array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Array. \\
+\hline
+{\em index} & índice \\
+\hline
+{\em i} & incremento \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}

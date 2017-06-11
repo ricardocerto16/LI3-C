@@ -1,0 +1,134 @@
+\hypertarget{parser_8h}{}\section{src/headers/parser.h File Reference}
+\label{parser_8h}\index{src/headers/parser.\+h@{src/headers/parser.\+h}}
+
+
+Protótipos das funções responsáveis por tratar dos ficheiros.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$libxml/xmlmemory.\+h$>$}\newline
+{\ttfamily \#include $<$libxml/parser.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../../interface.\+h\char`\"{}}\newline
+Include dependency graph for parser.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \hyperlink{parser_8h_a17db8d904dcb49690a537ac821284347}{count} (xml\+Char $\ast$key, int $\ast$contagem)
+\begin{DoxyCompactList}\small\item\em Resposável por contar as palavras e bytes do texto. \end{DoxyCompactList}\item 
+void \hyperlink{parser_8h_af511274001a137115308da47fa9b752f}{parse\+To\+Struct} (char $\ast$title, long id\+Cont, char $\ast$name\+Cont, int total\+Words, char $\ast$timestamp, long revision\+Id, long id, int n\+Bytes)
+\begin{DoxyCompactList}\small\item\em Resposável por guardar o parsing na estrutura. \end{DoxyCompactList}\item 
+void \hyperlink{parser_8h_ae33d858d2b0b6b7bc9b3fc69a8da1557}{parse\+Page} (int number, xml\+Doc\+Ptr doc, xml\+Node\+Ptr cur)
+\begin{DoxyCompactList}\small\item\em Resposável por fazer o parsing das páginas do documento. \end{DoxyCompactList}\item 
+T\+A\+D\+\_\+istruct \hyperlink{parser_8h_a9febcc42adf0161dc2828b6e3d7c5c1c}{parse\+Doc} (char $\ast$docname, T\+A\+D\+\_\+istruct parser)
+\begin{DoxyCompactList}\small\item\em Resposável por fazer o parsing do documento. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções responsáveis por tratar dos ficheiros. 
+
+O ficheiro contem os prototipos das funçoes que implementam o parser.
+
+\begin{DoxyAuthor}{Author}
+Grupo 63 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{parser_8h_a17db8d904dcb49690a537ac821284347}\label{parser_8h_a17db8d904dcb49690a537ac821284347}} 
+\index{parser.\+h@{parser.\+h}!count@{count}}
+\index{count@{count}!parser.\+h@{parser.\+h}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int$\ast$ count (\begin{DoxyParamCaption}\item[{xml\+Char $\ast$}]{key,  }\item[{int $\ast$}]{contagem }\end{DoxyParamCaption})}
+
+
+
+Resposável por contar as palavras e bytes do texto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Texto xml. \\
+\hline
+{\em contagem} & array que contém a informação da contagem das palavras e dos bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8h_a9febcc42adf0161dc2828b6e3d7c5c1c}\label{parser_8h_a9febcc42adf0161dc2828b6e3d7c5c1c}} 
+\index{parser.\+h@{parser.\+h}!parse\+Doc@{parse\+Doc}}
+\index{parse\+Doc@{parse\+Doc}!parser.\+h@{parser.\+h}}
+\subsubsection{\texorpdfstring{parse\+Doc()}{parseDoc()}}
+{\footnotesize\ttfamily T\+A\+D\+\_\+istruct parse\+Doc (\begin{DoxyParamCaption}\item[{char $\ast$}]{docname,  }\item[{T\+A\+D\+\_\+istruct}]{parser }\end{DoxyParamCaption})}
+
+
+
+Resposável por fazer o parsing do documento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em docname} & Nome do ficheiro. \\
+\hline
+{\em parser} & Estrutura T\+A\+D\+\_\+istruct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+A\+D\+\_\+istruct Estrutura. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8h_ae33d858d2b0b6b7bc9b3fc69a8da1557}\label{parser_8h_ae33d858d2b0b6b7bc9b3fc69a8da1557}} 
+\index{parser.\+h@{parser.\+h}!parse\+Page@{parse\+Page}}
+\index{parse\+Page@{parse\+Page}!parser.\+h@{parser.\+h}}
+\subsubsection{\texorpdfstring{parse\+Page()}{parsePage()}}
+{\footnotesize\ttfamily void parse\+Page (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{xml\+Doc\+Ptr}]{doc,  }\item[{xml\+Node\+Ptr}]{cur }\end{DoxyParamCaption})}
+
+
+
+Resposável por fazer o parsing das páginas do documento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & Número da página. \\
+\hline
+{\em doc} & Apontador para o documento xml. \\
+\hline
+{\em cur} & Apontador para o nodo xml. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8h_af511274001a137115308da47fa9b752f}\label{parser_8h_af511274001a137115308da47fa9b752f}} 
+\index{parser.\+h@{parser.\+h}!parse\+To\+Struct@{parse\+To\+Struct}}
+\index{parse\+To\+Struct@{parse\+To\+Struct}!parser.\+h@{parser.\+h}}
+\subsubsection{\texorpdfstring{parse\+To\+Struct()}{parseToStruct()}}
+{\footnotesize\ttfamily void parse\+To\+Struct (\begin{DoxyParamCaption}\item[{char $\ast$}]{title,  }\item[{long}]{id\+Cont,  }\item[{char $\ast$}]{name\+Cont,  }\item[{int}]{total\+Words,  }\item[{char $\ast$}]{timestamp,  }\item[{long}]{revision\+Id,  }\item[{long}]{id,  }\item[{int}]{n\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Resposável por guardar o parsing na estrutura. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Titulo do artigo. \\
+\hline
+{\em id\+Cont} & Id do Contribuidor. \\
+\hline
+{\em name\+Cont} & Username do Contribuidor. \\
+\hline
+{\em total\+Words} & Número de palavras presentes no texto do artigo. \\
+\hline
+{\em timestamp} & Timestamp da revisão. \\
+\hline
+{\em revision\+Id} & Id da revisão. \\
+\hline
+{\em id} & Id do artigo. \\
+\hline
+{\em n\+Bytes} & Número de bytes presentes no texto do artigo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}

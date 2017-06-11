@@ -1,0 +1,357 @@
+\hypertarget{heap_8h}{}\section{src/headers/heap.h File Reference}
+\label{heap_8h}\index{src/headers/heap.\+h@{src/headers/heap.\+h}}
+
+
+Protótipos das funções que trabalham com Heaps.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for heap.\+h\+:
+% FIG 0
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct heap $\ast$ \hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}
+\begin{DoxyCompactList}\small\item\em Declaração do tipo Heap, um tipo abstrato. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} \hyperlink{heap_8h_ad5e95f6d8aecc65d8221eff272ea6beb}{init\+Heap} (int size)
+\begin{DoxyCompactList}\small\item\em Inicia a estrutura Heap com um dado tamanho, alocando espaço para a mesma. \end{DoxyCompactList}\item 
+int \hyperlink{heap_8h_aa76331d0475db1c9146243bb3c6bf186}{insert\+Heap} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, long a, char $\ast$b, long c, long d, char $\ast$e, long f, char $\ast$g)
+\begin{DoxyCompactList}\small\item\em Insere numa Heap a informação pretendida. \end{DoxyCompactList}\item 
+int \hyperlink{heap_8h_a1916bb28436fce28d4e06f05e25e3875}{get\+Heap\+Used} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h)
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho da Heap utilizado até ao momento. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_a8a0edffec3967150800eb56cdc4b3464}{get\+Heap\+Total} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h)
+\begin{DoxyCompactList}\small\item\em Retorna o número total de revisões. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_a5044b449720f91c7cc9e1164befedb68}{get\+Id\+Cont} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o id\+Contribuidor do elem. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{heap_8h_a996eb2e19d27b7d212d8d501e2513efd}{get\+Name\+Cont} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o username do contribuidor. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_a8550a57b4d6956917a09862b8ef00709}{get\+Total\+Words} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o total de palavras do elem. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_a7497adb6ad5b9cdafe02fb07f283184e}{get\+N\+Bytes} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o total de bytes do elem. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{heap_8h_a78dd99d424abd6a2e0fa39315e2a466c}{get\+Timestamp} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o timestamp do elem. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_ab058326cff0e4a19a5a9aeed4ab54fc6}{get\+Revision\+Id} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o Id\+Revisao. \end{DoxyCompactList}\item 
+long \hyperlink{heap_8h_a50421d20e31f2c3ea09d6b3866dcd937}{get\+Article\+Id} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o Id\+Artigo. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{heap_8h_abaf1dc64a605858bca15d2e49f036a51}{get\+Title} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, int i)
+\begin{DoxyCompactList}\small\item\em Retorna o Titulo. \end{DoxyCompactList}\item 
+void \hyperlink{heap_8h_a6b3ee58462122c3ca92a66a8b5f62226}{set\+Heap\+Total} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h, long i)
+\begin{DoxyCompactList}\small\item\em altera o total de revisãoes de uma Heap \end{DoxyCompactList}\item 
+void \hyperlink{heap_8h_a143454fecc2c4975ce103b29296d61ed}{free\+Heap} (\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} h)
+\begin{DoxyCompactList}\small\item\em Liberta o espaço ocupado pela Heap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Protótipos das funções que trabalham com Heaps. 
+
+O ficheiro contem os prototipos das funçoes da estrutura Heap
+
+\begin{DoxyAuthor}{Author}
+Grupo 63 
+\end{DoxyAuthor}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}\label{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}} 
+\index{heap.\+h@{heap.\+h}!Heap@{Heap}}
+\index{Heap@{Heap}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{Heap}{Heap}}
+{\footnotesize\ttfamily typedef struct heap$\ast$ \hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}
+
+
+
+Declaração do tipo Heap, um tipo abstrato. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{heap_8h_a143454fecc2c4975ce103b29296d61ed}\label{heap_8h_a143454fecc2c4975ce103b29296d61ed}} 
+\index{heap.\+h@{heap.\+h}!free\+Heap@{free\+Heap}}
+\index{free\+Heap@{free\+Heap}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{free\+Heap()}{freeHeap()}}
+{\footnotesize\ttfamily void free\+Heap (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h }\end{DoxyParamCaption})}
+
+
+
+Liberta o espaço ocupado pela Heap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a50421d20e31f2c3ea09d6b3866dcd937}\label{heap_8h_a50421d20e31f2c3ea09d6b3866dcd937}} 
+\index{heap.\+h@{heap.\+h}!get\+Article\+Id@{get\+Article\+Id}}
+\index{get\+Article\+Id@{get\+Article\+Id}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Article\+Id()}{getArticleId()}}
+{\footnotesize\ttfamily long get\+Article\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o Id\+Artigo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id\+Artigo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a8a0edffec3967150800eb56cdc4b3464}\label{heap_8h_a8a0edffec3967150800eb56cdc4b3464}} 
+\index{heap.\+h@{heap.\+h}!get\+Heap\+Total@{get\+Heap\+Total}}
+\index{get\+Heap\+Total@{get\+Heap\+Total}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Heap\+Total()}{getHeapTotal()}}
+{\footnotesize\ttfamily long get\+Heap\+Total (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h }\end{DoxyParamCaption})}
+
+
+
+Retorna o número total de revisões. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total de revisões. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a1916bb28436fce28d4e06f05e25e3875}\label{heap_8h_a1916bb28436fce28d4e06f05e25e3875}} 
+\index{heap.\+h@{heap.\+h}!get\+Heap\+Used@{get\+Heap\+Used}}
+\index{get\+Heap\+Used@{get\+Heap\+Used}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Heap\+Used()}{getHeapUsed()}}
+{\footnotesize\ttfamily int get\+Heap\+Used (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h }\end{DoxyParamCaption})}
+
+
+
+Retorna o tamanho da Heap utilizado até ao momento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tamanho usado. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a5044b449720f91c7cc9e1164befedb68}\label{heap_8h_a5044b449720f91c7cc9e1164befedb68}} 
+\index{heap.\+h@{heap.\+h}!get\+Id\+Cont@{get\+Id\+Cont}}
+\index{get\+Id\+Cont@{get\+Id\+Cont}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Id\+Cont()}{getIdCont()}}
+{\footnotesize\ttfamily long get\+Id\+Cont (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o id\+Contribuidor do elem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id\+Contribuidor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a996eb2e19d27b7d212d8d501e2513efd}\label{heap_8h_a996eb2e19d27b7d212d8d501e2513efd}} 
+\index{heap.\+h@{heap.\+h}!get\+Name\+Cont@{get\+Name\+Cont}}
+\index{get\+Name\+Cont@{get\+Name\+Cont}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Name\+Cont()}{getNameCont()}}
+{\footnotesize\ttfamily char$\ast$ get\+Name\+Cont (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o username do contribuidor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a7497adb6ad5b9cdafe02fb07f283184e}\label{heap_8h_a7497adb6ad5b9cdafe02fb07f283184e}} 
+\index{heap.\+h@{heap.\+h}!get\+N\+Bytes@{get\+N\+Bytes}}
+\index{get\+N\+Bytes@{get\+N\+Bytes}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+N\+Bytes()}{getNBytes()}}
+{\footnotesize\ttfamily long get\+N\+Bytes (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o total de bytes do elem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total\+Bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_ab058326cff0e4a19a5a9aeed4ab54fc6}\label{heap_8h_ab058326cff0e4a19a5a9aeed4ab54fc6}} 
+\index{heap.\+h@{heap.\+h}!get\+Revision\+Id@{get\+Revision\+Id}}
+\index{get\+Revision\+Id@{get\+Revision\+Id}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Revision\+Id()}{getRevisionId()}}
+{\footnotesize\ttfamily long get\+Revision\+Id (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o Id\+Revisao. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id\+Revisao. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a78dd99d424abd6a2e0fa39315e2a466c}\label{heap_8h_a78dd99d424abd6a2e0fa39315e2a466c}} 
+\index{heap.\+h@{heap.\+h}!get\+Timestamp@{get\+Timestamp}}
+\index{get\+Timestamp@{get\+Timestamp}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Timestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily char$\ast$ get\+Timestamp (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o timestamp do elem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+timestamp. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_abaf1dc64a605858bca15d2e49f036a51}\label{heap_8h_abaf1dc64a605858bca15d2e49f036a51}} 
+\index{heap.\+h@{heap.\+h}!get\+Title@{get\+Title}}
+\index{get\+Title@{get\+Title}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Title()}{getTitle()}}
+{\footnotesize\ttfamily char$\ast$ get\+Title (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o Titulo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a8550a57b4d6956917a09862b8ef00709}\label{heap_8h_a8550a57b4d6956917a09862b8ef00709}} 
+\index{heap.\+h@{heap.\+h}!get\+Total\+Words@{get\+Total\+Words}}
+\index{get\+Total\+Words@{get\+Total\+Words}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{get\+Total\+Words()}{getTotalWords()}}
+{\footnotesize\ttfamily long get\+Total\+Words (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retorna o total de palavras do elem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total\+Palavras. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_ad5e95f6d8aecc65d8221eff272ea6beb}\label{heap_8h_ad5e95f6d8aecc65d8221eff272ea6beb}} 
+\index{heap.\+h@{heap.\+h}!init\+Heap@{init\+Heap}}
+\index{init\+Heap@{init\+Heap}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{init\+Heap()}{initHeap()}}
+{\footnotesize\ttfamily \hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap} init\+Heap (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Inicia a estrutura Heap com um dado tamanho, alocando espaço para a mesma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & Tamanho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Heap. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_aa76331d0475db1c9146243bb3c6bf186}\label{heap_8h_aa76331d0475db1c9146243bb3c6bf186}} 
+\index{heap.\+h@{heap.\+h}!insert\+Heap@{insert\+Heap}}
+\index{insert\+Heap@{insert\+Heap}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{insert\+Heap()}{insertHeap()}}
+{\footnotesize\ttfamily int insert\+Heap (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{long}]{a,  }\item[{char $\ast$}]{b,  }\item[{long}]{c,  }\item[{long}]{d,  }\item[{char $\ast$}]{e,  }\item[{long}]{f,  }\item[{char $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+Insere numa Heap a informação pretendida. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em a} & Id\+Contribuidor. \\
+\hline
+{\em b} & Username. \\
+\hline
+{\em c} & Total\+Palavras. \\
+\hline
+{\em d} & Total\+Bytes. \\
+\hline
+{\em e} & Timestamp. \\
+\hline
+{\em f} & Id\+Revisao. \\
+\hline
+{\em g} & Titulo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{heap_8h_a6b3ee58462122c3ca92a66a8b5f62226}\label{heap_8h_a6b3ee58462122c3ca92a66a8b5f62226}} 
+\index{heap.\+h@{heap.\+h}!set\+Heap\+Total@{set\+Heap\+Total}}
+\index{set\+Heap\+Total@{set\+Heap\+Total}!heap.\+h@{heap.\+h}}
+\subsubsection{\texorpdfstring{set\+Heap\+Total()}{setHeapTotal()}}
+{\footnotesize\ttfamily void set\+Heap\+Total (\begin{DoxyParamCaption}\item[{\hyperlink{heap_8h_a87cb3746dc4bfdc65c8918206c5c0c17}{Heap}}]{h,  }\item[{long}]{i }\end{DoxyParamCaption})}
+
+
+
+altera o total de revisãoes de uma Heap 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Heap. \\
+\hline
+{\em i} & índice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
